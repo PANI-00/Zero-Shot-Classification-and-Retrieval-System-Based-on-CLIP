@@ -29,7 +29,7 @@ with torch.no_grad():
     similarity = 100.0 * image_features @ text_features.T
     k = min(5, similarity.size(-1))
 
-#结果
+# 结果
 values, indices = similarity[0].topk(k=k, dim=-1)
 
 print(" 图像分类预测结果：")
