@@ -3,7 +3,7 @@ import torch
 from PIL import Image
 import requests
 from io import BytesIO
-
+##哟西桓公
 device = "cuda" if torch.cuda.is_available() else "cpu"
 model, preprocess = clip.load("ViT-B/32", device=device)
 
